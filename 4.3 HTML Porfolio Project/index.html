@@ -17,6 +17,17 @@
   <hr />
   <a href="./public/about.html">About Me</a>
   <a href="./public/contact.html">Contact Me</a>
+  <script>
+   var tweet = prompt("tweet");
+   var count=tweet.slice(0, 140);
+   if(tweet.length>140){
+    alert("your tweet is more than 140 characters. it has been trimmed to 140 characters: "+count);
+   } else {
+    alert("your tweet is within the limit: "+count);
+   }
+
+   
+  </script>
 </body>
 
 </html>
